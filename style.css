@@ -1,0 +1,17 @@
+body {
+    background-color: #c3ffeb;
+}
+.bar {
+    background-color: #76ffd1;
+    width: 100%;
+    height: 2em;
+}
+.bare {
+    background-color: inherit;
+    padding: 0.5em;
+    float: left;
+}
+.bare:hover {
+    background-color: #89dbfe;
+    color: #55c8fb;
+}
