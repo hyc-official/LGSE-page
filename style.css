@@ -4,6 +4,7 @@ body {
 .bar {
     background-color: #76ffd1;
     width: 100%;
+    display: block;
 }
 .bare {
     background-color: inherit;
