@@ -1,5 +1,5 @@
 body {
-    background-color: #c3ffeb;
+    background-color: #d6fff1;
 }
 .bar {
     background-color: #76ffd1;
@@ -9,8 +9,6 @@ body {
     background-color: inherit;
     padding: 0.5em;
     float: left;
-    margin-left: 1em;
-    margin-right: 1em;
 }
 .bare:hover {
     background-color: #89dbfe;
