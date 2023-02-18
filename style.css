@@ -1,20 +1,29 @@
 body {
-    background-color: #d6fff1;
+    background-color: #ddfcf2;
 }
-.bar {
-    background-color: #76ffd1;
-    width: 100%;
-    display: block;
-}
-.bare {
-    background-color: inherit;
-    padding: 0.5em;
-    float: left;
-}
-.bare:hover {
-    background-color: #89dbfe;
-    color: #55c8fb;
+a {
+    text-decoration: none;
+    color: #4682DC;
 }
 .content {
-    display: block;
+    padding-left: min(15em, 10%);
+    padding-right: min(15em, 10%);
+}
+.Bar {
+    float: left;
+    width: calc(100% - 4px);
+    text-align: left;
+    position: sticky;
+    top: 0;
+    color: #FFFFFF;
+    border: 2px solid #4682DC;
+    background-color: #000000;
+}
+.BarElement {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.BarElementSpecial {
+    color: #EB403E;
+    text-decoration: none;
 }
