@@ -23,7 +23,7 @@ function se_srh()
     }
     document.getElementById("se-dsp").innerHTML = ih;
 }
-function srhemj()
+function se_load()
 {
     document.body.innerHTML += `<style>
     .se-ent {

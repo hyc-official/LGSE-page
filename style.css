@@ -1,10 +1,14 @@
 body {
-    background-color: #cfe2ff;
+    background-color: #d7e4f9;
     margin: 0;
 }
 a {
     text-decoration: none;
-    color: #4682DC;
+    color: #4682dc;
+    transition: .2s;
+}
+a:hover {
+    color: #2e63b2;
 }
 code {
     border-radius: 2px;
@@ -21,12 +25,17 @@ code {
 }
 .alert {
     float: left;
-    border: 2px solid #E74C3C;
+    border: 2px solid #e74c3c;
     background-color: #ffdcd8;
     width: calc(100% - 4px);
     text-align: center;
     display: block;
     margin-bottom: 0.5em;
+}
+.foot {
+    background-color: #aac6f3;
+    border: 2px solid #4682dc;
+    bottom: 0;
 }
 .Bar {
     float: left;
@@ -34,17 +43,23 @@ code {
     text-align: left;
     position: sticky;
     top: 0;
-    color: #FFFFFF;
-    border: 2px solid #4682DC;
-    background-color: #000000;
+    color: #fff;
+    border: 2px solid #4682dc;
+    background-color: #000;
     display: block;
     margin-bottom: 1em;
 }
 .BarElement {
-    color: #FFFFFF;
+    color: #fff;
     text-decoration: none;
 }
+a.BarElement:hover {
+    color: #cfcfcf;
+}
 .BarElementSpecial {
-    color: #EB403E;
+    color: #eb403e;
     text-decoration: none;
+}
+a.BarElementSpecial:hover {
+    color: #d12522;
 }
