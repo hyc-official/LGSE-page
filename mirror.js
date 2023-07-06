@@ -1,5 +1,5 @@
 var mirrors = [
-    ["lgse.heyc.eu.org", "https://lgse.heyc.eu.org", "Heyc LGSE 官网，线路：Cloudflare"],
+    ["lgse.heyc.eu.org", "https://lgse.heyc.eu.org", "Heyc LGSE 官网，线路：Vercel"],
     ["lgse.vercel.app", "https://lgse.vercel.app", "Heyc LGSE Vercel 镜像站，线路：Vercel"],
     ["lgse.netlify.app", "https://lgse.netlify.app", "Heyc LGSE Netlify 镜像站，线路：Netlify"],
 ];
