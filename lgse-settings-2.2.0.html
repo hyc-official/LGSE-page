@@ -3,81 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>LGSE Settings</title>
-        <script src="https://kit.fontawesome.com/5b3d86374a.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-        <style>
-            * {
-                transition: .2s;
-            }
-            body {
-                margin: 0;
-            }
-            a {
-                text-decoration: none;
-                color: #4682dc;
-            }
-            a:hover {
-                color: #2e63b2;
-            }
-            .top {
-                display: flex;
-                position: sticky;
-                top: 0;
-                padding: 1em;
-                background-color: #fff;
-                box-shadow: 0 0 5px;
-            }
-            .main {
-                border-radius: 10px;
-                box-shadow: 0 0 10px;
-                margin-top: 3em;
-                margin-left: 10em;
-                margin-right: 10em;
-                margin-bottom: 3em;
-                width: calc(100% - 20em);
-                padding: max(20px, 1em);
-                font-size: 1.1em;
-            }
-            .main:hover {
-                box-shadow: 2px 2px 10px;
-            }
-            .center {
-                text-align: center;
-            }
-            .block {
-                display: flex;
-                width: 100%;
-            }
-            .foot {
-                border-top: 1px solid #000;
-            }
-        </style>
-        <script>
-            function ti(x)
-            {
-                if (x === true)
-                {
-                    return 1;
-                }
-                if (x === false)
-                {
-                    return 0;
-                }
-                return parseInt(x);
-            }
-            function change()
-            {
-                let st = {};
-                st["rep-emj"] = document.getElementById("rep-emj").checked;
-                st["srh-emj"] = document.getElementById("srh-emj").checked;
-                st["img-src"] = document.getElementById("img-src").selectedIndex;
-                st["chk-upd"] = document.getElementById("chk-upd").checked;
-                document.getElementById("info").innerText = JSON.stringify(st);
-                document.getElementById("status").style.color = "#e67e22";
-                document.getElementById("status").innerText = "未保存";
-                console.log(`[lgse settings] Options now: ${JSON.stringify(st)}`);
-            }
-        </script>
+        <script src="./fa.js"></script>
+        <link rel="stylesheet" href="./settings.css">
+        <script src="./settings.js"></script>
     </head>
     <body>
         <div class="top">
