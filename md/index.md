@@ -8,4 +8,4 @@ LGSE 还提供搜索表情的功能，但是仅限于用代码搜图。您可以
 
 [LGSE 官方文档 ->](https://docs.heyc.eu.org/LGSE/)
 
-![](https://socialify.git.ci/hyc-official/LuoguShowEmoji/image?description=1&descriptionEditable=Show%20QQ%20Emoji%20in%20Luogu.&font=Inter&forks=1&issues=1&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Light)
+![gh repo](https://socialify.git.ci/hyc-official/LuoguShowEmoji/image?description=1&descriptionEditable=Show%20QQ%20Emoji%20in%20Luogu.&font=Inter&forks=1&issues=1&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Light)

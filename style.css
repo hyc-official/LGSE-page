@@ -63,3 +63,6 @@ a.BarElement:hover {
 a.BarElementSpecial:hover {
     color: #d12522;
 }
+img[alt="gh repo"] {
+    width: 100%;
+}
