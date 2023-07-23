@@ -28,9 +28,16 @@ function load()
     prms.then((result) => {
         try {
             document.getElementById("content").innerHTML = marked.parse(result);
+            set_alert();
+            se_load();
+            if (document.location.pathname.indexOf("mirrors") != -1) {
+                chk_mirror();
+            }
         }
         catch (err) {
             console.log("gmd2s: error");
         }
     });
 }
+
+load();
