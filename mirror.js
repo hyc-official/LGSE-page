@@ -3,7 +3,7 @@ var mirrors = [
     ["lgse.vercel.app", "https://lgse.vercel.app", "Heyc LGSE Vercel 镜像站，线路：Vercel"],
     ["lgse.netlify.app", "https://lgse.netlify.app", "Heyc LGSE Netlify 镜像站，线路：Netlify"],
 ];
-function chk()
+function chk_mirror()
 {
     var flag = false;
     var html = "<ol>";

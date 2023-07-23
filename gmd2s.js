@@ -36,3 +36,9 @@ function load()
 }
 
 load();
+
+set_alert();
+se_load();
+if (document.location.pathname.indexOf("mirrors") != -1) {
+    chk_mirror();
+}

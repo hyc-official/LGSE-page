@@ -19,7 +19,7 @@ var foot = `<center>
     <p>Developed by <a href="https://blog.heyc.eu.org" target="_blank">Heyc</a>, <a href="https://github.com/hyc-official/LGSE-page" target="_blank">GitHub repo</a></p>
     <br>
 </center>`
-function set() {
+function set_alert() {
     document.getElementById("alert").innerHTML = `<p>${alert}</p>`;
     document.getElementById("bar").innerHTML = bar;
     document.getElementById("foot").innerHTML = foot;
