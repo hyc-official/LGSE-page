@@ -22,12 +22,12 @@ Hello LGSE!
 
 ### 使用 jsdelivr 源安装
 
-更新稍慢，访问速度较快。
+更新稍慢，访问速度较慢。
 
 [安装最新版本 ->](https://cdn.jsdelivr.net/gh/hyc-official/LuoguShowEmoji@latest/LuoguShowEmoji.min.user.js)
 
 ### 使用 GitHub Release 源安装
 
-更新极速，访问速度爆炸。
+更新极快，访问速度极慢。
 
 [安装最新版本 ->](https://github.com/hyc-official/LuoguShowEmoji/releases/latest/download/LuoguShowEmoji.min.user.js)
