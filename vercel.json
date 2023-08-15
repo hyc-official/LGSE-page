@@ -1,8 +1,6 @@
 {
-    "version": 2,
-    "routes": [
-      { "handle": "filesystem" },
-      { "src": "/(.*)", "status": 404, "dest": "/404.html" }
-    ]
-  }
-  
+  "version": 2,
+  "routes": [
+    { "src": "/[^\\.]*(?!(\\.js|\\.css|\\.md|\\.html))$", "dest": "/404.html" }
+  ]
+}
