@@ -1,6 +1,5 @@
-var ver = "2.2.9";
 var alert = `<p><i class="fa fa-flag-o"></i> 公告：热烈庆祝 LGSE 正式版本发布！<br>
-<i class="fa fa-code"></i> 当前最新版本：<span style="color: #e67e22">${ver} LRV</span><br>
+<i class="fa fa-code"></i> 当前最新版本：<span style="color: #e67e22" id="version">正在获取中...</span><br>
 <i class="fa fa-envelope-o"></i> 访问量统计：<img src="https://badges.toozhao.com/badges/01GSN1QZ8F7H2RWHEQEZC7YY4F/blue.svg" style="height: 1em;" /></p>`;
 var bar = `&nbsp;&nbsp;&nbsp;
 <span class="BarElement"><i class="fa fa-list"></i> 导航</span>
@@ -19,8 +18,17 @@ var foot = `<center>
     <p>Developed by <a href="https://blog.heyc.eu.org" target="_blank">Heyc</a>, <a href="https://github.com/hyc-official/LGSE-page" target="_blank">GitHub repo</a></p>
     <br>
 </center>`
+async function set_version() {
+    fetch("https://api.kgithub.com/repos/hyc-official/LuoguShowEmoji/releases/latest")
+      .then((response) => response.json())
+      .then((data) => {
+          console.log(data);
+          document.getElementById("version").innerText = data.tag_name + " (由 " + data.author.login + " 发布)";
+      });
+}
 function set_alert() {
     document.getElementById("alert").innerHTML = `<p>${alert}</p>`;
     document.getElementById("bar").innerHTML = bar;
     document.getElementById("foot").innerHTML = foot;
+    set_version();
 }
