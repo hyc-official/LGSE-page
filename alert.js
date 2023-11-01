@@ -12,18 +12,22 @@ var bar = `&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
 <a href="./mirrors" class="BarElement"><i class="fa fa-sitemap"></i> 镜像站列表</a>
 &nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="https://github.com/hyc-official/LuoguShowEmoji" class="BarElement" target="_blank"><i class="fa fa-code"></i> GH 仓库</a>`
+<a href="https://github.com/hyc-official/LuoguShowEmoji" class="BarElement" target="_blank"><i class="fa fa-code"></i> GH 仓库</a>`;
 var foot = `<center>
     <p>Luogu Show Emoji Site</p>
     <p>Developed by <a href="https://blog.heyc.eu.org" target="_blank">Heyc</a>, <a href="https://github.com/hyc-official/LGSE-page" target="_blank">GitHub repo</a></p>
     <br>
-</center>`
+</center>`;
 async function set_version() {
-    fetch("https://api.kgithub.com/repos/hyc-official/LuoguShowEmoji/releases/latest")
+    fetch("https://api.github.com/repos/hyc-official/LuoguShowEmoji/releases/latest")
       .then((response) => response.json())
       .then((data) => {
           console.log(data);
           document.getElementById("version").innerText = data.tag_name + " (由 " + data.author.login + " 发布)";
+      })
+      .catch((err) => {
+          console.error("Get version error", err);
+          document.getElementById("version").innerText = "获取失败，请检查网络";
       });
 }
 function set_alert() {
